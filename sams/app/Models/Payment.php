@@ -5,11 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Session extends Model
+class Payment extends Model
 {
     use HasFactory;
+    protected $table = "payments";
     protected $fillable = [
-        'session',
-        'status',    
+        "trans_no",
+        "desc",
+        "trans_date",
+        "payment_type",
     ];
 }
